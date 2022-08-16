@@ -1,0 +1,64 @@
+.logout-btn {
+  margin: 0 auto !important;
+  display: block !important;
+}
+#cartCount {
+  font-size: 10px;
+  background-color: tomato;
+  color: white;
+  padding: 2px 4px;
+  vertical-align: top;
+  margin-left: -8px;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+.badge {
+  padding: 0px 9px !important;
+  border-radius: 9px;
+}
+.fa-shopping-cart {
+  font-size: 20px;
+}
+.notifications-container {
+  padding: 20px;
+  max-height: 200px;
+  overflow-y: scroll;
+  border: 1px solid lightgrey;
+  background-color: white;
+  width: 270px;
+  z-index: 99;
+  box-shadow: 5px 5px 10px slategrey;
+  border-radius: 0px 10px 10px 10px;
+}
+.notification-read {
+  background-color: #9cd3d8 !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+.notification-unread {
+  background-color: rgb(255, 0, 106) !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+.fas[data-count] {
+  position: relative;
+}
+
+.fa-bell {
+  font-size: 1.5em;
+}
+
+.fas[data-count]:after {
+  position: absolute;
+  right: -0.75em;
+  top: -0.75em;
+  content: attr(data-count);
+  padding: 0.5em;
+  border-radius: 10em;
+  line-height: 0.9em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  min-width: 2em;
+  font: bold 0.4em sans-serif;
+}

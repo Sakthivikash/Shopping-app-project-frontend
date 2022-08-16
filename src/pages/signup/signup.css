@@ -1,0 +1,19 @@
+.signup-image-container {
+  background: url("https://static.vecteezy.com/system/resources/previews/002/167/930/non_2x/online-shopping-free-vector.jpg");
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+}
+.signup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media screen and (max-width: 756px) {
+  .signup-image-container {
+    display: none;
+  }
+}

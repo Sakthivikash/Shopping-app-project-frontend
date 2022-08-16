@@ -1,0 +1,19 @@
+.category-page-container {
+  min-height: 90vh;
+}
+
+.category-banner-container {
+  height: 200px;
+  background-color: #112d4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.searchBox {
+  height: 40px;
+  width: 300px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 5px;
+}

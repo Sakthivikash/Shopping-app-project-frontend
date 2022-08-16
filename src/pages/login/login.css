@@ -1,0 +1,19 @@
+.login-image-container {
+  background: url("https://www.pngitem.com/pimgs/m/9-95016_setup-online-store-hd-png-download.png");
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+}
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media screen and (max-width: 756px) {
+  .login-image-container {
+    display: none;
+  }
+}
