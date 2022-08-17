@@ -24,7 +24,7 @@ function App() {
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
   useEffect(() => {
-    const socket = io("ws://shoppe-b-end.herokuapp.com");
+    const socket = io("ws://localhost:5000");
     socket.off("notification").on("notification", (msgObj, user_id) => {
       if (user_id === user._id) {
         dispatch(addNotification(msgObj));
