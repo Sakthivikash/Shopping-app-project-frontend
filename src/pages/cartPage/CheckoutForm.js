@@ -26,7 +26,7 @@ function CheckoutForm() {
     if (!stripe || !elements || user.cart.count <= 0) return;
     setPaying(true);
     const { client_secret } = await fetch(
-      "http://localhost:5000/create-payment",
+      "https://shoppe-b-end.herokuapp.com/create-payment",
       {
         method: "POST",
         headers: {

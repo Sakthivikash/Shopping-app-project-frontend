@@ -6,7 +6,7 @@ import ProductPreview from "../../components/productPreview/ProductPreview";
 import Loading from "../../components/Loading";
 import "./category.css";
 import { logout } from "../../features/userSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 function Category() {
   const { category } = useParams();
@@ -17,11 +17,12 @@ function Category() {
   const [errMsg, setErrMsg] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const user = useSelector((state) => state.user);
 
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`/products/category/${category}`)
+      .get(`/products/category/${category}`, { headers: { token: user.token } })
       .then(({ data }) => {
         setLoading(false);
         setProducts(data);
